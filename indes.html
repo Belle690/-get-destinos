@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <title>Consultar destinos</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/adicionar.css" />
+    <script src="js/get.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Lista de Destinos</h1>
+        <p>Prática com o método GET: buscar e exibir os heróis da API do codeverse</p>
+    </header>
+
+
+    <main>
+        <a href="pages/cadastro.html">Ir para o cadastro</a>
+        <section id="conteiner-titulo-lista">
+            <h2 id="titulo-da-lista">Destinos cadastrados</h2>
+            <p>O destinos são carregados automaticamente ao iniciar a pagina.</p>
+            <p id="resposta"></p>
+            <ul id="lista-destinos"></ul>
+
+
+        </section>
+    </main>
+
+
+    <template id="modelo-destino">
+        <li>
+            <section class="card-capa">
+                <img alt="" />
+            </section>
+            <section class="card-conteudo">
+                <h3 class="nome"></h3>
+                <p><strong>Pais:</strong><span class="pais"> </span>
+                <p><strong>Tipo_destino:</strong><span class="tipo_destino"> </span></p>
+                <p><strong>Melhor_epoca</strong><span class="melhor_epoca"> </span></p>
+                <p><strong>Custo_medio</strong><span class="custo_medio"> </span></p>
+            </section>
+        </li>
+    </template>
+</body>
+</html>
